@@ -16,5 +16,6 @@ class TicTacToe {
         ~TicTacToe();
     
         uint8_t calculate();
+        uint8_t setMove(uint8_t player, uint32_t move);
 };
     

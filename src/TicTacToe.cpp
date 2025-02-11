@@ -117,3 +117,12 @@ uint8_t TicTacToe::calculate() {
     return possibilityFound ? 255U : 0U;
 }
 
+uint8_t TicTacToe::setMove(uint8_t player, uint32_t move) {
+    uint8_t ret {board[move]};
+    if (ret) {
+        return ret;
+    } else {
+        board[move] = player;
+        return 0;
+    }
+}

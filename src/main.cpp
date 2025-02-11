@@ -1,6 +1,6 @@
-#include "include/TicTacToeLocal.hpp"
+#include "include/TicTacToeUser.hpp"
 
 int main (void) {
-    TicTacToeLocal t;
+    TicTacToeUser t;
     return 0;
 }
