@@ -18,9 +18,8 @@
                 "-Wconversion",
                 "-Wsign-conversion",
                 "-Werror",
-                "main.cpp",
-                "TicTacToeLocal.cpp",
-                "TicTacToe.cpp",
+                "main2.cpp",
+                "glad.cpp",
                 "-o",
                 "${workspaceFolder}/bin/output.exe"
             ],

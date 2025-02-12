@@ -1,2 +1,5 @@
 bin/*
 build/*
+src/glad.c
+include/*
+src/main2.cpp

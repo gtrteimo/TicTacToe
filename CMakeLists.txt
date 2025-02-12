@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
-add_executable(TicTacToe src/main.cpp src/glad.c src/TicTacToe.cpp src/TicTacToeUser.cpp)
+# add_executable(TicTacToe src/main.cpp src/glad.c src/TicTacToe.cpp src/TicTacToeUser.cpp src/TicTacToeGUI.cpp)
+add_executable(TicTacToe src/main2.cpp src/glad.c)
 
 target_compile_options(TicTacToe PRIVATE
     -std=c++20
@@ -17,6 +18,10 @@ target_compile_options(TicTacToe PRIVATE
     -Wconversion
     -Wsign-conversion
     -Werror
+    -lGL
+    -lGLU
+    -lglut
+    -lm
     $<$<CONFIG:Debug>:-g>
     $<$<CONFIG:Release>:-O3>
     $<$<CONFIG:Release>:-DNDEBUG>
